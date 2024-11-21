@@ -1,0 +1,38 @@
+
+{% extends 'disenobase.html' %}
+
+{% block title %}Chat & Race Recommendations{% endblock %}
+
+{% block content %}
+<div class="chat-container">
+    <div class="chat-window">
+        <div class="chat-header">
+            <h2>Race Pace Chat Assistant</h2>
+            <p>Hi, runner! Ask me anything about races or choose one quick question.</p>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            
+             
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Write your question here...">
+            <button id="send-btn">Send</button>
+        </div>
+        <div class="quick-questions">
+            <h3>Quick Questions</h3>
+            <div class="quick-btns">
+                <button class="quick-btn" data-question="What Running Races do you recommend?">What Running Races do you recommend?</button>
+                <button class="quick-btn" data-question="Which Trail Running Races shouldn't I miss?">Which Trail Running Races shouldn't I miss?</button>
+                <button class="quick-btn" data-question="Which Trail is the highest in Spain?">Which Trail is the highest in Spain?</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="recommendations">
+        <h2>Recommended Races</h2>
+        <div id="recommendation-list">
+        </div>
+    </div>
+</div>
+{% endblock %}
