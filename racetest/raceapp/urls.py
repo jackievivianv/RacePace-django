@@ -25,5 +25,4 @@ urlpatterns = [
     path("sobremi/", views.sobre_mi, name="sobremi"),
     path("contador/<int:numerito>/", views.contador, name="contador"),
     path("admin/", admin.site.urls),
-]
-
+] 
